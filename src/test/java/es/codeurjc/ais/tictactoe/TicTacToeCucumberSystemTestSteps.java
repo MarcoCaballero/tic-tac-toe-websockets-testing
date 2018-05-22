@@ -6,23 +6,17 @@ import static org.junit.Assert.assertThat;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import cucumber.api.CucumberOptions;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import cucumber.api.junit.Cucumber;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(plugin = { "pretty" }, features = { "classpath:es/codeurjc/features" }, glue = {
-		"es.codeurjc.ais.tictactoe" })
 public class TicTacToeCucumberSystemTestSteps {
 
 	private SeleniumUtils utils;
